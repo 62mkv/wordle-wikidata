@@ -1,5 +1,7 @@
 package ee.mkv.wordlewd.game;
 
+import java.util.Optional;
+
 public interface WordGuesser {
-    String guessNextWord(GameStats gameStats);
+    Optional<String> guessNextWord(GameStats gameStats);
 }

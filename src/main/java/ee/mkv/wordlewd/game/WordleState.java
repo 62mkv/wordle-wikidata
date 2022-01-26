@@ -2,16 +2,18 @@ package ee.mkv.wordlewd.game;
 
 import lombok.Value;
 
+import java.util.ArrayList;
 import java.util.Collection;
+import java.util.List;
 
 @Value
 public
 class WordleState {
-    WordleRow[] rows = new WordleRow[6];
+    List<WordleRow> rows;
     WordleResult result;
 
     public WordleState(Collection<WordleRow> rows, WordleResult result) {
-        rows.toArray(this.rows);
+        this.rows = new ArrayList<>(rows);
         this.result = result;
     }
 }

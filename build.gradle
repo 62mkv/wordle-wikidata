@@ -10,7 +10,6 @@ repositories {
 }
 
 dependencies {
-    implementation "org.eclipse.rdf4j:rdf4j-sparqlbuilder:${rdf4jversion}"
     implementation group: 'org.eclipse.rdf4j', name: 'rdf4j-repository-sparql', version: "${rdf4jversion}"
     implementation 'io.github.bonigarcia:webdrivermanager:5.0.3'
     implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '4.0.0'
