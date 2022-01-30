@@ -1,5 +1,5 @@
 plugins {
-    id 'java'
+    id 'application'
 }
 
 group 'ee.mkv'
@@ -23,3 +23,10 @@ dependencies {
 test {
     useJUnitPlatform()
 }
+
+
+
+application {
+    mainClass = 'ee.mkv.wordlewd.Application'
+}
+
